@@ -2,6 +2,16 @@ package testtemperatura;
 
 import java.util.Arrays;
 
+/**
+ * 
+ * Esta clase sirve para generar un array bidimensional en el cual
+ * se cargan números, simulando que estos son temperaturas que
+ * corresponden a cada día de cada semana 
+ * @author Javier Fernández Paniagua
+ * @version 1.0
+ * 
+ */
+
 public class TestTemperatura {
 
     public static void main(String[] args) {
