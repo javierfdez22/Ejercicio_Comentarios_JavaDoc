@@ -90,8 +90,9 @@ public class TestTemperatura {
     
    
     /**
-     * 
-     * @param temperaturas 
+     * Para que este método funcione primero tenemos que ejecutar
+     * el método cargaTablas
+     * @param temperaturas array bidimensional con el que se trabaja
      */
     public static void cargarTablaMaximasSemanales(double[][] temperaturas) {
         double apoyo, aux;
@@ -115,6 +116,12 @@ public class TestTemperatura {
         }
 
     }
+    /**
+     * @return Previamente rellenado el array bidimensional con el
+     * método cargaTablas, este método nos devuel el valor máximo
+     * de cada fila
+     */
+    
     
     /**
      * 
