@@ -26,11 +26,11 @@ public class TestTemperatura {
         System.out.println(escribeTabla(temperaturas));
     }
     
-/**
- * Nos genera un array bidimensional de 52 filas y 7 columnas
- * y las rellena ocn números
- * @param temperaturas array bidimensional con el que se trabaja
- */
+    /**
+     * Nos genera un array bidimensional de 52 filas y 7 columnas
+     * y las rellena con números
+     * @param temperaturas array bidimensional con el que se trabaja
+     */
     public static void cargaTablas(double[][] temperaturas) {
         double valorEntero, valorRedondeado;
         int signo;
@@ -59,8 +59,9 @@ public class TestTemperatura {
     
     
     /**
-     * 
-     * @param temperaturas 
+     * Para que este método funcione primero tenemos que ejecutar
+     * el método cargaTablas
+     * @param temperaturas array bidimensional con el que se trabaja
      */
     public static void cargarTablaMinimasSemanales(double[][] temperaturas) {
         double apoyo, aux;
@@ -81,7 +82,13 @@ public class TestTemperatura {
             System.out.println("Semana " + i + ": " + apoyo + "\n");
         }
     }
+    /**
+     * @return Previamente rellenado el array bidimensional con el
+     * método cargaTablas, este método nos devuelve el valor mínimo
+     * de cada fila
+     */
     
+   
     /**
      * 
      * @param temperaturas 
