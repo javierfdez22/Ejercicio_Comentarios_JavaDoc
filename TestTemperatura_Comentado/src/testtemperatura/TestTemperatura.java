@@ -1,12 +1,13 @@
 package testtemperatura;
 
+
 import java.util.Arrays;
 
 /**
  * 
  * Esta clase sirve para generar un array bidimensional en el cual
  * se cargan números, simulando que estos son temperaturas que
- * corresponden a cada día de cada semana 
+ * corresponden a cada día de cada semana.
  * @author Javier Fernández Paniagua
  * @version 1.0
  * 
@@ -28,8 +29,12 @@ public class TestTemperatura {
     
     /**
      * Nos genera un array bidimensional de 52 filas y 7 columnas
-     * y las rellena con número
-     * @param temperaturas array bidimensional con el que se trabaja
+     * y las rellena con número. Este método rellena el array 
+     * bidimensional que se le pasa lleno de números generados
+     * de manera aleatoria y redondeados con la clase Math,
+     * siendo el valor positivo máximo 45 y el valor 
+     * negativo máximo -5.
+     * @param temperaturas array bidimensional con el que se trabaja.
      */
     public static void cargaTablas(double[][] temperaturas) {
         double valorEntero, valorRedondeado;
@@ -49,19 +54,14 @@ public class TestTemperatura {
                 temperaturas[i][j] = valorRedondeado;
             }
         }
-    }
-    /**
-     * @return Este método devuelve el array bidimensional que se le pasa
-     * lleno de números generados de manera aleatoria y redondeados con
-     * la clase Math, siendo el valor positivo máximo 45 y el valor 
-     * negativo máximo -5. No muestra el resultado por pantalla.
-     */
-    
+    }    
     
     /**
      * Para que este método funcione primero tenemos que ejecutar
-     * el método cargaTablas
-     * @param temperaturas array bidimensional con el que se trabaja
+     * el método cargaTablas. Previamente rellenado el array 
+     * bidimensional con el método cargaTablas, este método
+     * nos muestra por pantalla el valor mínimo de cada fila.
+     * @param temperaturas array bidimensional con el que se trabaja.
      */
     public static void cargarTablaMinimasSemanales(double[][] temperaturas) {
         double apoyo, aux;
@@ -82,17 +82,13 @@ public class TestTemperatura {
             System.out.println("Semana " + i + ": " + apoyo + "\n");
         }
     }
-    /**
-     * @return Previamente rellenado el array bidimensional con el
-     * método cargaTablas, este método nos devuelve el valor mínimo
-     * de cada fila. Nos muestra el resultado por pantalla.
-     */
-    
    
     /**
      * Para que este método funcione primero tenemos que ejecutar
-     * el método cargaTablas
-     * @param temperaturas array bidimensional con el que se trabaja
+     * el método cargaTablas. Previamente rellenado el array 
+     * bidimensional con el método cargaTablas, este método
+     * nos muestra por pantalla el valor máximo de cada fila.
+     * @param temperaturas array bidimensional con el que se trabaja.
      */
     public static void cargarTablaMaximasSemanales(double[][] temperaturas) {
         double apoyo, aux;
@@ -115,17 +111,13 @@ public class TestTemperatura {
             System.out.println("Semana " + i + ": " + apoyo + "\n");
         }
 
-    }
-    /**
-     * @return Previamente rellenado el array bidimensional con el
-     * método cargaTablas, este método nos devuelve el valor máximo
-     * de cada fila. Muestra el resultado por pantalla.
-     */
-    
+    }    
     
     /**
      * Para que este método funcione primero tenemos que ejecutar
-     * el método cargaTablas
+     * el método cargaTablas. Previamente rellenado el array
+     * bidimensional con el método cargaTablas, este método
+     * nos muestra por pantalla la media de los números de cada fila.
      * @param temperaturas array bidimensional con el que se trabaja
      */
     public static void cargarTablaMediaSemanales(double[][] temperaturas) {
@@ -139,17 +131,14 @@ public class TestTemperatura {
             System.out.println("Media Semana " + (i + 1) + ": " + mediaRedondeada + "\n");
         }
     }
-    /**
-     * @return Previamente rellenado el array bidimensional con el
-     * método cargaTablas, este método nos devuelve la media de los
-     * números de cada fila. Muestra el resultado por pantalla.
-     */
-    
 
     /**
      * Para que este método funcione primero tenemos que ejecutar
      * el método cargaTablas
      * @param temperaturas array bidimensional con el que se trabaja
+     * @return Este método sirve para mostrarnos el contenido del
+     * array bidimensional en una cadena. Si no hemos ejecutado
+     * el método cargaTablas previamente se mostrará vacío.
      */
     public static String escribeTabla(double[][] temperaturas) {
         String salida = "";
@@ -161,10 +150,6 @@ public class TestTemperatura {
             salida += "\n";
         }
         return salida;
-    }    
-    /**
-     * @return Este método sirve para mostrarnos el contenido del
-     * array bidimensional. Si no hemos ejecutado el método cargaTablas
-     * previamente se mostrará vacío.
-     */
+    }
 }
+
