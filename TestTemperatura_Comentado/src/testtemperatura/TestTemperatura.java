@@ -147,8 +147,9 @@ public class TestTemperatura {
     
 
     /**
-     * 
-     * @param temperaturas 
+     * Para que este método funcione primero tenemos que ejecutar
+     * el método cargaTablas
+     * @param temperaturas array bidimensional con el que se trabaja
      */
     public static String escribeTabla(double[][] temperaturas) {
         String salida = "";
@@ -160,5 +161,10 @@ public class TestTemperatura {
             salida += "\n";
         }
         return salida;
-    }
+    }    
+    /**
+     * @return Este método sirve para mostrarnos el contenido del
+     * array bidimensional. Si no hemos ejecutado el método cargaTablas
+     * previamente se mostrará vacío.
+     */
 }
