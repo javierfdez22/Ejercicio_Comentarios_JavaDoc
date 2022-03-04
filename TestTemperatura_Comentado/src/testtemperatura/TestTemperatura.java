@@ -25,7 +25,12 @@ public class TestTemperatura {
 //        cargarTablaMediaSemanales(temperaturas);
         System.out.println(escribeTabla(temperaturas));
     }
-
+    
+/**
+ * Nos genera un array bidimensional de 52 filas y 7 columnas
+ * y las rellena ocn números
+ * @param temperaturas array bidimensional con el que se trabaja
+ */
     public static void cargaTablas(double[][] temperaturas) {
         double valorEntero, valorRedondeado;
         int signo;
@@ -45,7 +50,18 @@ public class TestTemperatura {
             }
         }
     }
-
+    /**
+     * @return Este método devuelve el array bidimensional que se le pasa
+     * lleno de números generados de manera aleatoria y redondeados con
+     * la clase Math, siendo el valor positivo máximo 45 y el valor 
+     * negativo máximo -5
+     */
+    
+    
+    /**
+     * 
+     * @param temperaturas 
+     */
     public static void cargarTablaMinimasSemanales(double[][] temperaturas) {
         double apoyo, aux;
         int i = 0;
@@ -66,6 +82,10 @@ public class TestTemperatura {
         }
     }
     
+    /**
+     * 
+     * @param temperaturas 
+     */
     public static void cargarTablaMaximasSemanales(double[][] temperaturas) {
         double apoyo, aux;
         int i = 0;
@@ -88,7 +108,11 @@ public class TestTemperatura {
         }
 
     }
-
+    
+    /**
+     * 
+     * @param temperaturas 
+     */
     public static void cargarTablaMediaSemanales(double[][] temperaturas) {
         double suma = 0, media = 0, mediaRedondeada = 0;
         for (int i = 0; i < 52; i++) {
@@ -101,6 +125,10 @@ public class TestTemperatura {
         }
     }
 
+    /**
+     * 
+     * @param temperaturas 
+     */
     public static String escribeTabla(double[][] temperaturas) {
         String salida = "";
         for (int i = 0; i < 52; i++) {
