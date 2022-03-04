@@ -28,7 +28,7 @@ public class TestTemperatura {
     
     /**
      * Nos genera un array bidimensional de 52 filas y 7 columnas
-     * y las rellena con números
+     * y las rellena con número
      * @param temperaturas array bidimensional con el que se trabaja
      */
     public static void cargaTablas(double[][] temperaturas) {
@@ -54,7 +54,7 @@ public class TestTemperatura {
      * @return Este método devuelve el array bidimensional que se le pasa
      * lleno de números generados de manera aleatoria y redondeados con
      * la clase Math, siendo el valor positivo máximo 45 y el valor 
-     * negativo máximo -5
+     * negativo máximo -5. No muestra el resultado por pantalla.
      */
     
     
@@ -85,7 +85,7 @@ public class TestTemperatura {
     /**
      * @return Previamente rellenado el array bidimensional con el
      * método cargaTablas, este método nos devuelve el valor mínimo
-     * de cada fila
+     * de cada fila. Nos muestra el resultado por pantalla.
      */
     
    
@@ -118,14 +118,15 @@ public class TestTemperatura {
     }
     /**
      * @return Previamente rellenado el array bidimensional con el
-     * método cargaTablas, este método nos devuel el valor máximo
-     * de cada fila
+     * método cargaTablas, este método nos devuelve el valor máximo
+     * de cada fila. Muestra el resultado por pantalla.
      */
     
     
     /**
-     * 
-     * @param temperaturas 
+     * Para que este método funcione primero tenemos que ejecutar
+     * el método cargaTablas
+     * @param temperaturas array bidimensional con el que se trabaja
      */
     public static void cargarTablaMediaSemanales(double[][] temperaturas) {
         double suma = 0, media = 0, mediaRedondeada = 0;
@@ -138,6 +139,12 @@ public class TestTemperatura {
             System.out.println("Media Semana " + (i + 1) + ": " + mediaRedondeada + "\n");
         }
     }
+    /**
+     * @return Previamente rellenado el array bidimensional con el
+     * método cargaTablas, este método nos devuelve la media de los
+     * números de cada fila. Muestra el resultado por pantalla.
+     */
+    
 
     /**
      * 
